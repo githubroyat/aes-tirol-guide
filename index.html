@@ -1639,8 +1639,8 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
     <div class="phead-in">
       <div class="phead-copy">
         <p class="eyebrow">Act</p>
-        <h1 id="h-timeline" tabindex="-1">Deadlines and questions</h1>
-        <p class="lead">From handing in the S6–S7 choice form to applying for university: what happens when, and what to ask the school before you decide.</p>
+        <h1 id="h-timeline" tabindex="-1">Deadlines</h1>
+        <p class="lead">From handing in the S6–S7 choice form to applying for university: what happens when.</p>
       </div>
       <svg class="pillu" viewBox="0 0 240 170" aria-hidden="true">
         <path class="itrail" d="M16 156 L50 140 L96 112 L142 80 L188 48"/>
@@ -1684,19 +1684,6 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
           <div class="callout" style="background:var(--card);border:1px solid var(--line)">
             <b>The first EB group</b>
             <p>Today's S6 (school year 2026/27) is the first AES Tirol group to sit the EB, in 2028. Their exam choices are due by 15 October 2027.</p>
-          </div>
-          <div class="panel">
-            <h3>Questions to ask the school</h3>
-            <ol class="qlist" id="qlist">
-              <li>Which S6–S7 options will actually run next year (5 pupils needed)?</li>
-              <li>If I didn't take Latin or Economics in S4–S5, can I still take it in S6–S7, for example after an entry test?</li>
-              <li>Will you confirm my total Latin hours in writing for universities?</li>
-              <li>For English-section pupils: will you confirm in writing that German (L2) was taught and examined at C1 level, and that History, Geography and Economics were taught in German?</li>
-              <li>Which L3, L4 and L5 languages will run in S6–S7?</li>
-              <li>If a 4-lesson science is too small to run in English, will English-section pupils follow it in German?</li>
-            </ol>
-            <button class="btn" type="button" id="copyQ">Copy questions</button>
-            <span class="small muted" id="copyMsg" role="status" style="margin-left:8px"></span>
           </div>
         </div>
       </div>
@@ -2516,7 +2503,7 @@ const PAGES=[
   {v:'german',grp:'Check',t:'German or English',d:'German levels by university, and English-taught options.',ic:'ladder'},
   {v:'grades',grp:'Check',t:'Studying abroad',d:'What other countries look for in your S6–S7 subjects.',ic:'chart'},
   {v:'convert',grp:'Check',t:'EB grades by country',d:'How EB grades convert in each country, from the official rules.',ic:'globe'},
-  {v:'timeline',grp:'Act',t:'Deadlines and questions',d:'The choice form, the EB years, and what to ask the school.',ic:'flag'},
+  {v:'timeline',grp:'Act',t:'Deadlines',d:'The choice form, the EB years, the exams and applying.',ic:'flag'},
   {v:'sources',grp:'Reference',t:'Glossary and sources',d:'Terms explained, limits of this guide, and every source.',ic:'book'}
 ];
 const NI={
@@ -2655,7 +2642,7 @@ $('#planForm').addEventListener('change',render);
 $('#planForm').addEventListener('submit',e=>e.preventDefault());
 $$('#presets .pbtn').forEach(b=>b.addEventListener('click',()=>{writePlan(PRESETS[b.dataset.preset]);render();}));
 $$('#filters .pbtn').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.f;$$('#filters .pbtn').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));render();}));
-render(); initCopy(); initShell();
+render(); initShell();
 renderConvert();
 route(true);
 })();
