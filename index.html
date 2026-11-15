@@ -707,9 +707,9 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
 .cvt{max-height:22rem;overflow:auto}
 @media (max-width:700px){
   details.cv>summary{grid-template-columns:minmax(0,1fr) 24px}
-  .cv-t{grid-column:1;grid-row:2}
-  .cv-r{grid-column:1;grid-row:3;text-align:left}
-  .chev{grid-column:2;grid-row:1}
+  details.cv .cv-t{grid-column:1;grid-row:2}
+  details.cv .cv-r{grid-column:1;grid-row:3;text-align:left}
+  details.cv .chev{grid-column:2;grid-row:1}
 }
 
 .cvgrp{font-family:var(--f-mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:500;margin:10px 0 2px}
@@ -830,11 +830,11 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
       <div class="home-facts">
         <div class="fact">
           <div class="ico ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="12" r="4.5"/><path d="M12.5 12H22M18.5 12v3.5M21.5 12v2.5"/></svg></div>
-          <div><b>Any EB pass gets you into an Austrian university.</b><span>Austrian law treats the European Baccalaureate as a general university entrance qualification. Your subjects and grades don't change that.<button type="button" class="src" data-src="ug,oead"></button></span></div>
+          <div><b>Any EB pass lets you apply to Austrian universities.</b><span>Austrian law treats the European Baccalaureate as a general university entrance qualification. Your subjects and grades don't change that.<button type="button" class="src" data-src="ug,oead"></button></span></div>
         </div>
         <div class="fact">
           <div class="ico warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3M12 14.5v2.5"/></svg></div>
-          <div><b>Some degrees add an extra exam.</b><span>Latin is the big one: medicine, law, pharmacy and most humanities. Architecture and engineering need descriptive geometry.<button type="button" class="src" data-src="ubvo,uibkzp"></button></span></div>
+          <div><b>Some degrees add an extra exam.</b><span>Latin is the big one: medicine, law, pharmacy and most humanities. Architecture and several engineering degrees need descriptive geometry.<button type="button" class="src" data-src="ubvo,uibkzp"></button></span></div>
         </div>
         <div class="fact">
           <div class="ico lang"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5h10a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H8.5l-3.5 3v-3H4a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1z"/><path d="M18 9h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-1v3l-3.5-3H12a1 1 0 0 1-1-1v-1.5"/></svg></div>
@@ -893,7 +893,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
       <h2 id="is-eb">In short</h2>
       <ul>
         <li><b>Any EB pass is enough to apply.</b>Austrian law treats the EB as a general university entrance qualification.</li>
-        <li><b>Some degrees add one exam.</b>Latin for medicine, law and many humanities. Descriptive geometry for architecture and engineering.</li>
+        <li><b>Some degrees add one or two exams.</b>Latin for medicine, law and many humanities. Descriptive geometry for architecture and engineering.</li>
         <li><b>Exams make up half the mark.</b>Five written and three oral exams count 50%. Your S7 preliminary mark counts the other 50%.</li>
       </ul>
     </section>
@@ -977,15 +977,15 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
     <section class="blk" aria-labelledby="h-rules">
       <div class="blk-h">
         <h2 id="h-rules">Rules that lock you in</h2>
-        <p class="muted">These come from the official European Schools rules. They're why early choices matter.</p>
+        <p class="muted">These come from the EB rules and the school’s choice form. They're why early choices matter.</p>
       </div>
       <div class="rules">
         <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2.5v3M16 2.5v3M7 13h3M11 13h3M15 13h2M7 17h3M11 17h3"/></svg><div><b>31 to 35 lessons a week</b><span>At least 29 must come from compulsory subjects and options.<button type="button" class="src" data-src="aireb,handbook"></button></span></div></div>
-        <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6"/></svg><div><b>Changes only between S6 and S7</b><span>Between S6 and S7 you can drop Maths 5 to 3, or a 4-lesson subject to its 2-period course. Moving up needs a test. Nothing new starts in S7.<button type="button" class="src" data-src="ebregs"></button></span></div></div>
-        <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg><div><b>Exam choices are final</b><span>You register your exam subjects by 15 October of S7. They can't be changed afterwards.<button type="button" class="src" data-src="handbook"></button></span></div></div>
+        <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6"/></svg><div><b>Changes only between S6 and S7</b><span>Between S6 and S7 you can ask to move from Maths 5 to Maths 3, or from a 4-lesson subject to its 2-lesson course; the Director decides. Moving up needs a test. Nothing new starts in S7.<button type="button" class="src" data-src="ebregs"></button></span></div></div>
+        <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg><div><b>Exam choices are final</b><span>You register your exam subjects before 15 October of S7. They can't be changed afterwards.<button type="button" class="src" data-src="handbook"></button></span></div></div>
         <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4v-5h4v-5h4V5h4"/></svg><div><b>Some subjects have prerequisites</b><span>L3, Latin, Economics, Language 4, Art and Music as electives need the same subject in S4–S5. AES Tirol's form sets no prerequisite for Maths 5; other European Schools let pupils who took Maths 4 in only with a teacher's recommendation and a test.<button type="button" class="src" data-src="form,eel2m"></button></span></div></div>
-        <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 19c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5M14.5 14.2c.8-.5 1.6-.7 2.5-.7 2.4 0 4 1.8 4 4.5"/></svg><div><b>Options need 5 pupils</b><span>An S6–S7 option only runs if at least five pupils choose it.<button type="button" class="src" data-src="form"></button></span></div></div>
-        <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="5" height="13" rx="1"/><rect x="9.5" y="6" width="5" height="13" rx="1"/><rect x="16" y="6" width="5" height="13" rx="1" stroke-dasharray="2 2"/></svg><div><b>Take at least three options</b><span>The school recommends at least 3. With only two 4-lesson options, both automatically become your written exams. A third keeps your choice open.<button type="button" class="src" data-src="form,aireb"></button></span></div></div>
+        <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 19c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5M14.5 14.2c.8-.5 1.6-.7 2.5-.7 2.4 0 4 1.8 4 4.5"/></svg><div><b>Courses need 5 pupils</b><span>An S6–S7 elective only runs if at least five pupils choose it (the EB Handbook says 7 for a complementary subject).<button type="button" class="src" data-src="form"></button></span></div></div>
+        <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="5" height="13" rx="1"/><rect x="9.5" y="6" width="5" height="13" rx="1"/><rect x="16" y="6" width="5" height="13" rx="1" stroke-dasharray="2 2"/></svg><div><b>Choose two to four electives</b><span>The form requires at least 2 four-lesson electives and recommends 3. With only two, both automatically become your written exams. A third keeps your choice open.<button type="button" class="src" data-src="form,aireb"></button></span></div></div>
         <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M12 8v8M8 12h8"/></svg><div><b>At most one complementary subject</b><span>A 2-lesson extra such as ICT, Politics or a lab. It counts toward your week but has no EB exam.<button type="button" class="src" data-src="form"></button></span></div></div>
         <div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h10a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H8.5l-3.5 3v-3H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M18 9h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-1v3l-3.5-3H12a1 1 0 0 1-1-1v-1.5"/></svg><div><b>History, Geography, Economics in L2</b><span>These are taught and examined in your L2, never in your L1. See <a href="#languages">Languages of teaching</a>.<button type="button" class="src" data-src="langpol"></button></span></div></div>
       </div>
@@ -1014,7 +1014,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
       <ul>
         <li><b>A core for everyone.</b>L1, L2, Maths, History, Geography, Philosophy, Sport and Religion/Ethics.</li>
         <li><b>Then 2 to 4 subjects at 4 lessons.</b>The school recommends at least 3. History, Geography or Philosophy at 4 lessons count too: they replace the 2-lesson course.</li>
-        <li><b>Some options have prerequisites.</b>Latin, Economics, Language 4, Art and Music need the same subject in S4–S5.</li>
+        <li><b>Some electives have prerequisites.</b>L3, Latin, Economics, Language 4, Art and Music need the same subject in S4–S5.</li>
       </ul>
     </section>
 
@@ -1035,7 +1035,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
     <section class="blk" aria-labelledby="h-kf">
       <div class="blk-h"><h2 id="h-kf">About the school</h2></div>
       <div class="keyfacts" style="margin-top:0">
-        <div class="kf"><b>2028</b><span>First EB exams at AES Tirol (school year 2027/28). Today's S6 is the first group.</span></div>
+        <div class="kf"><b>2028</b><span>First EB exams at AES Tirol (school year 2027/28), taken by the 2026/27 S6 class. Pupils choosing S6–S7 subjects now sit the EB in 2029.</span></div>
         <div class="kf"><b>DE · EN</b><span>Secondary currently runs in the German and English sections.</span></div>
         <div class="kf"><b>50 min</b><span>Length of one lesson. Other European Schools use 45 minutes.</span></div>
         <div class="kf"><b>2024</b><span>Accredited as a European School, the first in Austria.</span></div>
@@ -1053,7 +1053,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
       <div class="phead-copy">
         <p class="eyebrow">Understand</p>
         <h1 id="h-languages" tabindex="-1">Languages of teaching</h1>
-        <p class="lead">European Schools teach several subjects in your first foreign language, your <button class="term" data-t="l1" aria-expanded="false">L2</button>. This is the official language policy, not a school choice. Every exam is taken in the language the subject was taught in.</p>
+        <p class="lead">European Schools teach several subjects in your first foreign language, your <button class="term" data-t="l1" aria-expanded="false">L2</button>. This is the official language policy, not a school choice. Exams are normally taken in the language the subject was taught in.</p>
       </div>
       <svg class="pillu" viewBox="0 0 240 170" aria-hidden="true">
         <rect class="i1" x="12" y="18" width="128" height="80" rx="18"/><path class="i1" d="M40 96 L34 122 L64 96Z"/>
@@ -1081,7 +1081,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
           <div class="tscroll">
             <table class="ltab">
               <caption class="vh">Language of teaching and exams for each S6–S7 subject</caption>
-              <thead><tr><th scope="col">Subject</th><th scope="col">Taught and examined in</th></tr></thead>
+              <thead><tr><th scope="col">Subject</th><th scope="col">Taught in</th></tr></thead>
               <tbody>
                 <tr><th scope="row">Language 1 (and L1 Advanced)</th><td><span class="lc l1">L1</span></td></tr>
                 <tr><th scope="row">Language 2 (and L2 Advanced)</th><td><span class="lc l2">L2</span></td></tr>
@@ -1092,7 +1092,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
                 <tr class="hl"><th scope="row">History, Geography</th><td><span class="lc l2">L2</span></td></tr>
                 <tr class="hl"><th scope="row">Economics</th><td><span class="lc l2">L2</span></td></tr>
                 <tr><th scope="row">Religion / Ethics</th><td><span class="lc l2">L2</span></td></tr>
-                <tr><th scope="row">Language 3, Language 4</th><td><span class="lc own">own</span> taught in that language</td></tr>
+                <tr><th scope="row">Language 3, Language 4</th><td><span class="lc own">L3 / L4</span> in that language</td></tr>
                 <tr><th scope="row">Art, Music, Sport, complementary subjects</th><td><span class="lc mx">mixed</span> groups</td></tr>
               </tbody>
             </table>
@@ -1104,10 +1104,10 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
             <span><i class="mx"></i>Mixed groups, in a language you know</span>
           </div>
           <ul class="facts-list" style="margin-top:18px">
-            <li><b>History and Geography are never taught or examined in L1.</b> Economics is also taught in L2. If 4-lesson History or Geography can't run in your L2, it may run in another language, but never your L1. Only for Economics may the Director, as an exception, allow L1.<button type="button" class="src" data-src="langpol,ebregs"></button></li>
+            <li><b>History and Geography are never taught or examined in L1.</b> Economics is also taught in L2. If 4-lesson History or Geography can't run in your L2, it may run in another language with the Director’s permission, but never your L1. Only for Economics, and only if it runs in a language the pupils don’t know, may the Director allow L1.<button type="button" class="src" data-src="langpol,ebregs"></button></li>
             <li><b>At AES Tirol the secondary sections are German and English,</b> so for most pupils L2 is the other of the two.</li>
             <li><b>L2 aims for C1 by the end of S7,</b> according to the official L2 syllabus. The written L2 exam is marked at C1 level. L2 Advanced aims for C1+.<button type="button" class="src" data-src="l2syl"></button></li>
-            <li><b>L2 can change only on entry to S6,</b> and even then History, Geography and Economics stay in the old L2.<button type="button" class="src" data-src="langpol"></button></li>
+            <li><b>A change of L2 can only be requested on entry to S6,</b> and even then History, Geography and Economics stay in the old L2.<button type="button" class="src" data-src="langpol"></button></li>
             <li><b>Small groups:</b> if a 4-lesson science or Philosophy can't run in your L1, you may follow it in another language you know. In the exam you may then ask for a bilingual dictionary.<button type="button" class="src" data-src="langpol,ebregs"></button></li>
             <li><b>Pupils without their own section</b> (for example Italian speakers) keep their home language as L1 and learn most other subjects in the section language.<button type="button" class="src" data-src="langpol"></button></li>
           </ul>
@@ -1128,7 +1128,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
             <div class="tbar" role="img" aria-label="11 lessons in English, 19 in German, 2 in mixed groups">
               <span class="t1" style="width:34.4%">English 11</span><span class="t2" style="width:59.4%">German 19</span><span class="mx" style="width:6.2%" title="Sport, mixed group"></span>
             </div>
-            <p>19 of 32 lessons are in German, and three of the five written exams (L2 Advanced and two of History, Geography and Economics) are in German. An English-section pupil can leave school with strong, examined German.</p>
+            <p>19 of 32 lessons are in German, and three of the five written exams (L2 Advanced and two of History, Geography and Economics) are in German. A pupil with English L1 can leave school with strong, examined German.</p>
           </div>
           <div class="tkey" style="margin-top:10px"><span><i class="t1"></i>L1</span><span><i class="t2"></i>L2</span><span><i class="mx"></i>Mixed group</span></div>
           <p class="small muted" style="margin-top:12px">The <a href="#planner">Subject planner</a> shows the same split for your own choices.</p>
@@ -1197,7 +1197,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
                   <label><input type="radio" name="relig" id="rel-e" value="Ethics"><span>Ethics</span></label>
                 </div>
               </div>
-              <div class="seg-row"><span id="maths-lab">Mathematics</span>
+              <div class="seg-row"><span id="maths-lab">Mathematics (the number is lessons a week)</span>
                 <div class="seg" role="radiogroup" aria-labelledby="maths-lab">
                   <label><input type="radio" name="maths" id="maths-5" value="5"><span>Maths 5</span></label>
                   <label><input type="radio" name="maths" id="maths-3" value="3"><span>Maths 3</span></label>
@@ -1209,7 +1209,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
               <legend><span class="stepn" aria-hidden="true">3</span>Elective subjects</legend>
               <p class="hint" style="margin-top:-6px">Section 2 of the form. Choose at least 2 and at most 4 four-lesson electives; the school recommends at least 3.<button type="button" class="src" data-src="form"></button> The real limit is 31 to 35 lessons a week.</p>
               <h3 class="subh">History, Geography and Philosophy: 2 or 4 lessons</h3>
-              <p class="hint">Everyone takes all three. At 4 lessons, a subject counts as one of your four-lesson electives but adds only 2 lessons.</p>
+              <p class="hint">Everyone takes all three. At 4 lessons, a subject counts as one of your four-lesson electives; it then takes 4 lessons a week instead of 2.</p>
               <div class="hgp">
                 <div class="seg-row"><span id="hist-lab">History <span class="lt l2" title="Taught in L2">L2</span></span>
                   <div class="seg" role="radiogroup" aria-labelledby="hist-lab"><label><input type="radio" name="hist" id="hist-2" value="2"><span>2 lessons</span></label><label><input type="radio" name="hist" id="hist-4" value="4"><span>4 lessons</span></label></div></div>
@@ -1319,7 +1319,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
         <h2 id="h-deglist">Degree by degree</h2>
         <p class="muted small">Select a degree to see the details. Exams marked "during your studies" are taken after you enrol, by a deadline in the degree rules; universities run preparation courses. Entrance procedures are decided year by year.</p>
       </div>
-      <div class="banner warn"><span class="st warn" aria-hidden="true"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 5v3.3l2.1 1.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span><b>Latin rules may change.</b> On 14 October 2026 the rectors’ conference (uniko) recommended dropping the Latin requirement for law, medicine, Protestant theology and all teaching subjects except Latin, among others. Latin would stay for philosophy, history, art history and Catholic theology. Two ministries must agree and the regulation would have to change; nothing has changed yet, so the cards below show today’s rules.<button type="button" class="src" data-src="uniko,latinhours"></button></span></div>
+      <div class="banner warn"><span class="st warn" aria-hidden="true"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 5v3.3l2.1 1.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span><b>Latin rules may change.</b> On 14 October 2026 the rectors’ conference (uniko) recommended dropping the Latin requirement for law, medicine, Protestant theology and all teaching subjects except Latin, among others. Latin would stay, for example, for philosophy, history, art history and Catholic theology. The report doesn’t list every subject, so for other degrees it is unclear. Two ministries must agree and the regulation would have to change; nothing has changed yet, so the cards below show today’s rules.<button type="button" class="src" data-src="uniko,latinhours"></button></span></div>
       <div class="l1prompt l1-first"><p><b>Choose your L1 first.</b> The checks below depend on it.</p><div class="pick" data-secpick role="group" aria-label="Your L1"></div></div>
       <div class="needs-l1">
       <div class="planstrip" id="planStrip"></div>
@@ -1373,7 +1373,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
             <span><i class="q2"></i>Up to 20% for other EU citizens</span>
             <span><i class="q3"></i>At most 5% for everyone else</span>
           </div>
-          <p class="small muted" style="margin-top:10px">A MedUni Wien checklist puts the European Baccalaureate in the Austrian group (the IB Diploma is not). The checklist says it isn't legally binding, and this quota law runs out on 31 December 2027, just before the first AES Tirol group applies.<button type="button" class="src" data-src="quota"></button></p>
+          <p class="small muted" style="margin-top:10px">A MedUni Wien checklist puts the European Baccalaureate in the Austrian group (the IB Diploma is not). The checklist says it isn't legally binding, and this quota law runs out on 31 December 2027, before pupils choosing now apply in 2029. It may be renewed or changed.<button type="button" class="src" data-src="quota"></button></p>
         </div>
       </div>
     </section>
@@ -1389,7 +1389,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
       <div class="phead-copy">
         <p class="eyebrow">Check</p>
         <h1 id="h-german" tabindex="-1">German or English</h1>
-        <p class="lead">Almost every bachelor's degree in Austria is taught in German. Uni Innsbruck teaches all its bachelor's and diploma programmes in German. This matters most for pupils in the English section.</p>
+        <p class="lead">Almost every bachelor's degree in Austria is taught in German. Uni Innsbruck teaches all its bachelor's and diploma programmes in German. This matters most for pupils with English as L1.</p>
       </div>
       <svg class="pillu" viewBox="0 0 240 170" aria-hidden="true">
         <rect class="i1s" x="16" y="128" width="28" height="30" rx="5"/><text class="tx" x="30" y="146" text-anchor="middle">A1</text>
@@ -1408,7 +1408,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
     <section class="inshort" aria-labelledby="is-ger">
       <h2 id="is-ger">In short</h2>
       <ul>
-        <li><b>B2 or C1, never C2 for a bachelor's.</b>C2 appears only for Uni Wien's master in Translation.</li>
+        <li><b>B2 or C1 at every institution checked.</b>C2 appears only for Uni Wien's master in Translation.</li>
         <li><b>Uni Innsbruck asks for B2.</b>Medicine, Vienna and Graz ask for C1, and so do Klagenfurt and PH Wien for teacher training.</li>
         <li><b>EB German L2 aims for C1,</b>but no university names the EB as proof.</li>
       </ul>
@@ -1457,12 +1457,12 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
             <tr><th scope="row">Uni Innsbruck<button type="button" class="src" data-src="uibklang"></button></th><td><span class="lvl b2">B2</span><small>A2 to apply</small></td><td>Master Translation Studies <span class="lvl c1">C1</span></td><td>Certificate from a school with German as the language of teaching and exams</td></tr>
             <tr><th scope="row">MedUni Innsbruck<button type="button" class="src" data-src="imedde,imed17"></button></th><td><span class="lvl c1">C1</span><small>Medicine, dentistry, molecular medicine</small></td><td>–</td><td>Its 2017 regulation: a certificate "showing German taught at Matura level". The web page asks for a German-language school.</td></tr>
             <tr><th scope="row">PH Tirol<button type="button" class="src" data-src="phtirol"></button></th><td>Early-childhood education <span class="lvl c1">C1</span></td><td>–</td><td>Not stated</td></tr>
-            <tr><th scope="row">Hochschule Kufstein<button type="button" class="src" data-src="hok"></button></th><td><span class="lvl b2">B2</span></td><td>English-taught programmes: English B2</td><td>Native speakers exempt</td></tr>
+            <tr><th scope="row">Hochschule Kufstein<button type="button" class="src" data-src="hok"></button></th><td><span class="lvl b2">B2</span></td><td>English-taught programmes: English B2</td><td>German native speakers exempt</td></tr>
             <tr><th scope="row">MCI Innsbruck<button type="button" class="src" data-src="mci"></button></th><td>No level published</td><td>English-taught bachelors apply in English</td><td>–</td></tr>
           </tbody>
           <tbody data-region="vienna">
             <tr class="grp-row"><th colspan="4" scope="rowgroup">Vienna</th></tr>
-            <tr><th scope="row">Uni Wien<button type="button" class="src" data-src="univie"></button></th><td><span class="lvl c1">C1</span><small>A2 to apply</small></td><td>Master Translation <span class="lvl c2">C2</span> to apply; master German as a foreign language C1 to apply; a few masters A2</td><td>German-language school for C1. A certificate with German as a subject counts only as A2.</td></tr>
+            <tr><th scope="row">Uni Wien<button type="button" class="src" data-src="univie"></button></th><td><span class="lvl c1">C1</span><small>A2 to apply</small></td><td>English-taught bachelor Mathematical Foundations of Data Science: no German (English B2); Master Translation <span class="lvl c2">C2</span> to apply; master German as a foreign language C1 to apply; a few masters A2</td><td>German-language school for C1. A certificate with German as a subject counts only as A2.</td></tr>
             <tr><th scope="row">TU Wien<button type="button" class="src" data-src="tuwien"></button></th><td><span class="lvl c1">C1</span></td><td>English-taught masters: English B2</td><td>Certificate from a German-speaking country or region</td></tr>
             <tr><th scope="row">WU Vienna<button type="button" class="src" data-src="wulang"></button></th><td><span class="lvl c1">C1</span></td><td>Business and Economics (English): no German</td><td>German-language school</td></tr>
             <tr><th scope="row">MedUni Wien</th><td><span class="lvl c1">C1</span></td><td>–</td><td>German-language school</td></tr>
@@ -1481,10 +1481,10 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
         </table>
       </div>
       <ul class="facts-list" style="margin-top:14px">
-        <li><b>Nobody asks for C2 to start a bachelor's.</b> C2 appears only for Uni Wien's master in Translation.</li>
+        <li><b>None of the institutions checked asks for C2 for a bachelor’s.</b> C2 appears only for Uni Wien's master in Translation.</li>
         <li><b>Innsbruck, Salzburg, Klagenfurt and Leoben ask for B2;</b> Vienna, Graz and all medicine ask for C1, and so does teacher training at Klagenfurt and PH Wien. Linz depends on the degree.</li>
-        <li><b>EB German L2 aims for C1</b> and is examined at C1, so on paper it meets every bachelor's requirement. The open question is only whether each office accepts the EB as the proof.</li>
-        <li><b>Language certificates</b> (ÖSD, Goethe, telc, TestDaF, DSD II) are accepted everywhere but expire: after two years at Uni Innsbruck, three at Uni Wien and WU, five at Uni Graz.</li>
+        <li><b>EB German L2 aims for C1</b> and the written L2 exam is marked against C1, but an EB pass is not a C1 certificate. The open question is only whether each office accepts the EB as the proof.</li>
+        <li><b>Language certificates</b> (ÖSD, Goethe, telc, TestDaF, DSD II) are widely accepted (each university lists which), but they expire: after two years at Uni Innsbruck, three at Uni Wien and WU, five at Uni Graz.</li>
       </ul>
     </section>
 
@@ -1496,7 +1496,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
           <ul class="facts-list" style="margin-top:10px">
             <li>The MedAT and its preparation materials are <b>"solely available in German"</b> (official MedAT site).<button type="button" class="src" data-src="medat"></button></li>
             <li>Admission to medicine and dentistry needs <b>German at C1</b>, proven when you take up your place, not when you register for the test.</li>
-            <li>The only English-taught route found: <b>Karl Landsteiner University, Krems</b>, Bachelor Medical Science (own written test and interview, €11,000 per semester). Its master's in human medicine asks for German B2. Its bachelor also asks for school Latin totalling 10 weekly hours, or a Latin/medical-terminology test before the end of the degree.<button type="button" class="src" data-src="kl"></button></li>
+            <li>The only English-taught route found: <b>Karl Landsteiner University, Krems</b>, Bachelor Medical Science (own written test and interview, €11,000 per semester). Its master's in human medicine asks for German B2. Its bachelor also asks for school Latin adding up to 10 weekly hours over the years (not 10 lessons a week), or a Latin/medical-terminology test before the end of the degree.<button type="button" class="src" data-src="kl"></button></li>
           </ul>
         </div>
         <div class="panel">
@@ -1504,7 +1504,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
           <ul class="facts-list" style="margin-top:10px">
             <li>The ministry's recognition note on the EB: <b>"If the subject German appears on the EB certificate, German is thereby proven."</b> It names no level and makes no L1/L2 distinction.<button type="button" class="src" data-src="oead"></button></li>
             <li>The universities' own lists name a certificate from a school with German as the language of teaching and exams, a language certificate (ÖSD, Goethe, telc, TestDaF), or their German supplementary exam. <b>None mentions the EB.</b> A few accept German as a school subject (see the table above).</li>
-            <li>German section: German is the language of teaching and exams. English section: German is L2, examined at C1, with History, Geography and Economics taught in German.</li>
+            <li>German L1: German is the language of teaching and exams. English L1: German is L2, examined at C1, with History, Geography and Economics taught in German.</li>
             <li>Language certificates expire after two or three years, depending on the university, so take one in S7 rather than earlier.</li>
             <li>Without proof you sit a German supplementary exam (<span lang="de">Vorstudienlehrgang</span>) before admission. You need A2 to apply.</li>
           </ul>
@@ -1513,8 +1513,9 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
           <h3>English-taught bachelor's</h3>
           <ul class="facts-list" style="margin-top:10px">
             <li><b>WU Vienna, Business and Economics:</b> no German needed. A pass in English on a school-leaving certificate from the EU, EEA or Switzerland counts as English proof.<button type="button" class="src" data-src="wulang"></button></li>
-            <li><b>MCI Innsbruck, Business &amp; Management:</b> full-time and entirely in English, €363.36 per semester for EU citizens. Applications in English.<button type="button" class="src" data-src="mci"></button></li>
+            <li><b>MCI Innsbruck, Business &amp; Management:</b> full-time and entirely in English, €363.36 per semester for EU and EEA citizens. Applications in English.<button type="button" class="src" data-src="mci"></button></li>
             <li><b>Karl Landsteiner University:</b> Medical Science (see "Medicine is German-only").</li>
+            <li><b>Uni Wien, Mathematical Foundations of Data Science:</b> an English-taught bachelor; no German needed, English B2.<button type="button" class="src" data-src="univie"></button></li>
             <li><b>Uni Innsbruck:</b> all bachelor's degrees are taught in German. English-taught programmes are mostly master's.</li>
             <li>These programmes still have their own application steps.</li>
           </ul>
@@ -1529,7 +1530,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
           </ul>
         </div>
         <div class="panel">
-          <h3>Tips for the English section</h3>
+          <h3>Tips for pupils with English L1</h3>
           <ul class="facts-list" style="margin-top:10px">
             <li>German stays your L2 to the end. That gives you German on the EB certificate, and History, Geography and Economics in German.</li>
             <li>L2 Advanced (German) aims for C1+ and adds a German written exam.</li>
@@ -1574,7 +1575,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
       <h2 id="is-gr">In short</h2>
       <ul>
         <li><b>Subjects matter as much as the mark.</b>ETH Zurich needs Maths, a science and a language among your EB exams; EPFL needs Maths 5 and Physics.<button type="button" class="src" data-src="eth,epfl"></button></li>
-        <li><b>Medicine abroad often needs all three sciences.</b>Groningen asks for Biology, Chemistry, Physics and Maths.<button type="button" class="src" data-src="rug"></button></li>
+        <li><b>Medicine abroad often needs all three sciences.</b>Groningen asks for Biology, Chemistry, Physics and Maths for its Dutch-taught medicine.<button type="button" class="src" data-src="rug"></button></li>
         <li><b>For the UK, Maths 5 suits maths-heavy degrees.</b>A UK government guide (2013) calls it the course for mathematics, engineering, physics and some economics.<button type="button" class="src" data-src="ucas"></button></li>
       </ul>
     </section>
@@ -1582,7 +1583,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
     <section class="blk" aria-labelledby="h-abroad">
       <div class="blk-h">
         <h2 id="h-abroad">If you want to study outside Austria</h2>
-        <p class="muted">Every EU country recognises the EB. Some countries also care which subjects you took and at what level. These cards check your plan. For how EB grades convert in each country, see <a href="#convert">EB grades by country</a>.</p>
+        <p class="muted">Every EU country recognises the EB. Some countries also care which subjects you took and at what level. These cards check your plan. Requirements were checked in November 2026, mostly for 2026/27 or 2027 entry, so check them again for 2029. For how EB grades convert in each country, see <a href="#convert">EB grades by country</a>.</p>
       </div>
       <div class="l1prompt l1-first"><p><b>Choose your L1 first.</b> These cards check your plan.</p><div class="pick" data-secpick role="group" aria-label="Your L1"></div></div>
       <div class="abroad needs-l1" id="abroadGrid"></div>
@@ -1617,7 +1618,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
       <ul>
         <li><b>Every country has its own rule.</b>Some use an official table or formula, some use the EB mark as it is, and some leave it to each university.</li>
         <li><b>Sources are labelled.</b>EU rules come from the European Schools’ equivalence document (2014-03-D-25). Worked tables are our own calculations with those rules; entries beyond the EU come from the named university and government pages.<button type="button" class="src" data-src="equiv"></button></li>
-        <li><b>Most tables use the 0–10 scale.</b>An EB final mark of 75 is 7.5 on that scale. Where a table only works for single subjects, it says so.</li>
+        <li><b>Check which mark a table uses.</b>Germany, Italy, France, Greece, Portugal, Romania and Sweden state the EB final mark (out of 100). Other tables just say “EB marks”, which may mean subject marks out of 10.</li>
       </ul>
     </section>
 
@@ -1627,7 +1628,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
         <p class="muted">Open a country to see its official rule and the full conversion table. EB marks are out of 100 (pass 50); single subjects are out of 10.</p>
       </div>
       <div class="cvlist" id="cvList"></div>
-      <p class="small muted" style="margin-top:12px">Switzerland and the United Kingdom don’t convert the EB but set their own minimum marks; see <a href="#grades">Studying abroad</a>.</p>
+      <p class="small muted" style="margin-top:12px">Switzerland and the United Kingdom don’t convert the EB; some universities there (ETH, EPFL, Cambridge, Imperial) set minimum marks; see <a href="#grades">Studying abroad</a>.</p>
     </section>
   </div>
   <nav class="pn" data-pn aria-label="Previous and next page"></nav>
@@ -1659,9 +1660,9 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
     <section class="inshort" aria-labelledby="is-tl">
       <h2 id="is-tl">In short</h2>
       <ul>
-        <li><b>The S6–S7 form is due Friday 27 November 2026.</b>It goes to your homeroom teacher and binds you for both years.</li>
-        <li><b>Changes are only possible between S6 and S7.</b>You can drop Maths 5 to 3, or a 4-lesson subject to 2 lessons; moving up needs a test. Nothing new starts in S7.</li>
-        <li><b>Exam subjects are final.</b>You register them by 15 October of S7 and can't change them afterwards.</li>
+        <li><b>The S6–S7 form is due Friday 27 November 2026.</b>It goes to your homeroom teacher and binds you for S6 (2027/28) and S7 (2028/29). You sit the EB in June 2029.</li>
+        <li><b>Changes are only possible between S6 and S7.</b>You can ask to move from Maths 5 to Maths 3, or a 4-lesson subject to 2 lessons, and the Director decides; moving up needs a test. Nothing new starts in S7.</li>
+        <li><b>Exam subjects are final.</b>You register them before 15 October of S7 (2028 for pupils choosing now) and can't change them afterwards.</li>
       </ul>
     </section>
 
@@ -1670,12 +1671,12 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
       <div class="tl-wrap">
         <ol class="tl">
           <li class="now"><span class="yb">Now</span><div><b>Start from your L1, then choose S6–S7 subjects</b><p>After L1 come Maths, your four-lesson electives (at least 2, at most 4) and at most one complementary subject. Check the prerequisites: L3, Latin, Economics, Language 4, Art and Music need the same subject in S4–S5.</p></div></li>
-          <li class="now"><span class="yb">27 Nov</span><div><b>Hand in the S6–S7 choice form</b><p>Due Friday 27 November 2026, to your homeroom teacher. Options run only if at least 5 pupils choose them.<button type="button" class="src" data-src="form,downloads"></button></p></div></li>
-          <li class="eb"><span class="yb">S6</span><div><b>The EB years begin</b><p>Your choices are binding. At the end of S6 you can drop Maths 5 to Maths 3, or a 4-lesson subject to its 2-lesson course; moving up needs an attainment test.</p></div></li>
-          <li class="eb"><span class="yb">S7</span><div><b>By 15 October: register your exam subjects</b><p>Five written and three oral exams. The choice is final.<button type="button" class="src" data-src="handbook"></button></p></div></li>
-          <li class="eb"><span class="yb">January</span><div><b>Long Pre-Bac exams</b><p>Usually two weeks after the winter holidays. With your S7 class marks they make up the preliminary mark (40% class marks, 60% Pre-Bac), which counts 50% of the final mark.<button type="button" class="src" data-src="handbook"></button></p></div></li>
-          <li class="eb"><span class="yb">June</span><div><b>Written exams, then orals</b><p>Written exams in the first two weeks of June, at most two a day. Orals follow on the school's own schedule: 20 minutes each, after 20 minutes of preparation. Written exams count 35%, orals 15%. With a justified reason, a missed written exam can be taken as a substitute exam later in the session; the Handbook also mentions September.<button type="button" class="src" data-src="handbook,aireb"></button></p></div></li>
-          <li class="after"><span class="yb">After</span><div><b>Apply</b><p>Have your German proof ready. Medicine: register for the MedAT in March, sit it in July.<button type="button" class="src" data-src="medat"></button></p></div></li>
+          <li class="now"><span class="yb">27 Nov</span><div><b>Hand in the S6–S7 choice form</b><p>Due Friday 27 November 2026, to your homeroom teacher. Courses run only if at least 5 pupils choose them.<button type="button" class="src" data-src="form,downloads"></button></p></div></li>
+          <li class="eb"><span class="yb">S6</span><div><b>The EB years begin (2027/28)</b><p>Your choices are binding. At the end of S6 you can ask to move from Maths 5 to Maths 3, or from a 4-lesson subject to its 2-lesson course, and the Director decides; moving up needs an attainment test.</p></div></li>
+          <li class="eb"><span class="yb">S7</span><div><b>Before 15 October 2028: register your exam subjects</b><p>Five written and three oral exams. The choice is final.<button type="button" class="src" data-src="handbook"></button></p></div></li>
+          <li class="eb"><span class="yb">January</span><div><b>Long Pre-Bac exams (January 2029)</b><p>Usually two weeks after the winter holidays. With your S7 class marks they make up the preliminary mark (40% class marks, 60% Pre-Bac exams), which counts 50% of the final mark.<button type="button" class="src" data-src="handbook"></button></p></div></li>
+          <li class="eb"><span class="yb">June</span><div><b>Written exams, then orals (June 2029)</b><p>Written exams in the first two weeks of June, at most two a day. Orals follow on the school's own schedule: 20 minutes each, after 20 minutes of preparation. Written exams count 35%, orals 15%. With a justified reason, a missed written exam can be taken as a substitute exam later in the session; the Handbook also mentions September.<button type="button" class="src" data-src="handbook,aireb"></button></p></div></li>
+          <li class="after"><span class="yb">After</span><div><b>Apply (2029)</b><p>Have your German proof ready. Medicine: register for the MedAT in March, sit it in July.<button type="button" class="src" data-src="medat"></button></p></div></li>
         </ol>
         <div class="aside">
           <div class="callout">
@@ -1684,7 +1685,7 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
           </div>
           <div class="callout" style="background:var(--card);border:1px solid var(--line)">
             <b>The first EB group</b>
-            <p>Today's S6 (school year 2026/27) is the first AES Tirol group to sit the EB, in 2028. Their exam choices are due by 15 October 2027.</p>
+            <p>The 2026/27 S6 class is the first AES Tirol group to sit the EB, in June 2028. Pupils choosing S6–S7 subjects now are the second group: EB in June 2029.</p>
           </div>
         </div>
       </div>
@@ -1693,8 +1694,8 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
     <section class="blk" aria-labelledby="h-watch">
       <div class="blk-h"><h2 id="h-watch">Things that may change</h2></div>
       <div class="watch">
-        <div class="wcard"><span class="when">Recommended 14 Oct 2026</span><h3>Latin rules may relax</h3><p>The rectors' conference (uniko) recommended dropping Latin for law, medicine, Protestant theology and all teaching subjects except Latin, among others. Latin would stay for philosophy, history, art history and Catholic theology. Two ministries must agree. Nothing has changed yet, so plan with today's rules.<button type="button" class="src" data-src="uniko"></button></p></div>
-        <div class="wcard"><span class="when">Ends 31 Dec 2027 (UG)</span><h3>The medicine quota</h3><p>The 75% quota for Austrian certificates is set to expire before the first AES Tirol group applies in 2028. It may be renewed or changed.<button type="button" class="src" data-src="quota"></button></p></div>
+        <div class="wcard"><span class="when">Recommended 14 Oct 2026</span><h3>Latin rules may relax</h3><p>The rectors' conference (uniko) recommended dropping Latin for law, medicine, Protestant theology and all teaching subjects except Latin, among others. Latin would stay, for example, for philosophy, history, art history and Catholic theology. The report doesn’t list every subject, so for other degrees it is unclear. Two ministries must agree. Nothing has changed yet, so plan with today's rules.<button type="button" class="src" data-src="uniko"></button></p></div>
+        <div class="wcard"><span class="when">Ends 31 Dec 2027 (UG)</span><h3>The medicine quota</h3><p>The quota (at least 75% of places for Austrian certificates) is set to expire on 31 December 2027, before pupils choosing now apply in 2029. It may be renewed or changed.<button type="button" class="src" data-src="quota"></button></p></div>
         <div class="wcard"><span class="when">Decided each spring</span><h3>Entrance procedures</h3><p>Uni Innsbruck decides every year which entrance procedures run. Biology, computer science, pharmacy and economics were suspended for 2026/27. The 2027/28 details aren't published yet.<button type="button" class="src" data-src="uibkauf"></button></p></div>
       </div>
     </section>
@@ -1728,11 +1729,12 @@ details.cv[open] .chev svg{transform:rotate(180deg)}
       <ul class="caveats">
         <li>No Austrian document mentions an EB from an accredited European School specifically. It's the same diploma as at the official European Schools, so the risk looks low.</li>
         <li>The law for universities of applied sciences (Fachhochschulen) doesn't name the EB. The ministry's recognition office treats it as equivalent.</li>
-        <li>"Biology covered" is a reading of the rule, which asks for biology or science totalling 4 weekly hours in upper secondary school. The compulsory biology at AES Tirol covers that.</li>
+        <li>"Biology covered" is a reading of the rule, which asks for biology or science totalling 4 weekly hours in upper secondary school. S4–S5 Biology (2 lessons a week in each year) covers that.</li>
         <li>The school's timetable page is older than its 2027/28 choice forms (it shows 3-lesson sciences, "Biology 2" and Greek in S6–S7). This guide follows the forms.</li>
         <li>The prerequisites come from the footnote on the school's 2027/28 S6–S7 form ("only if attended in S4 and S5") and the European Schools' booklets.</li>
         <li>No university names the EB in its German-proof rules. The ministry's note is the only official statement.</li>
         <li>Entrance procedures are decided year by year. The 2027/28 details for Innsbruck aren't published yet.</li>
+        <li>The EB rules shown are the 2026 versions (EB Handbook updated October 2026, exam regulations 2026). They may change before your exams in 2029.</li>
         <li>This guide is research, not legal advice. The university decides in each case.</li>
       </ul>
     </section>
@@ -1855,11 +1857,12 @@ const TERMS={
   eb:['European Baccalaureate (EB)','The school-leaving diploma of the European Schools. Accredited schools like AES Tirol award the same diploma.'],
   aes:['AES Tirol','Accredited European School Tyrol, run within the Akademisches Gymnasium Innsbruck (AGI). Accredited in 2024 as the first in Austria.'],
   l1:['L1, L2, L3, L4','L1 is your section language: German or English at AES Tirol. Choose it first, because it decides your L2: English for German L1, German for English L1. L2 is also the language of History, Geography and Economics. L3 and L4 are further languages you can continue as options.'],
-  cefr:['CEFR levels (A1 to C2)','The European scale for language skills. B2 means you can use the language independently; C1 means you can study in it. The EB L2 course aims for C1.'],
+  cefr:['CEFR levels (A1 to C2)','The European scale for language skills. B2 means you can use the language independently; C1 means advanced use. Austrian universities ask for B2 or C1, depending on the place. The EB L2 course aims for C1.'],
   ezp:['German supplementary exam (Ergänzungsprüfung Deutsch)','A German exam taken in a university preparation course (Vorstudienlehrgang) before admission, for applicants who can’t prove German otherwise. You need A2 German to apply.'],
   susp:['Suspended entrance procedure','The university has a test in its rules but decided not to hold it this year, so you simply enrol. It can return in a later year.'],
   swals:['SWALS','Students Without A Language Section: pupils whose home language has no section at the school. They keep their home language as L1 and learn most other subjects in the section language.'],
   hcl:['Host-country language','The language of the country the school is in: German in Austria. Some courses may use it when they can’t run in L2.'],
+  dipl:['First diploma exam (erste Diplomprüfung)','Diploma degrees such as law and medicine are split into study sections. The first <button class="term" data-t="dipl" aria-expanded="false">diploma exam</button> closes the first section, not the whole degree. A required Latin exam must be passed before you take its last part.'],
   wst:['Weekly hours (Wochenstunden)','Austria counts school subjects in “weekly hours”: the lessons per week in each school year, added up over the years. Latin with 4 lessons a week in S4, S5, S6 and S7 makes 16 weekly hours. The Latin rule asks for 10 of these in total, not 10 lessons a week.'],
   period:['Lesson a week (Wochenstunde)','One lesson every week for a school year. At AES Tirol a lesson is 50 minutes, like an Austrian Wochenstunde. Austria counts Latin by adding these up over the years.'],
   zp:['Supplementary exam (Zusatzprüfung)','An extra exam that some Austrian degrees require, such as Latin. Some must be passed before you enrol, others during your studies.'],
@@ -1870,7 +1873,7 @@ const TERMS={
   option:['four-lesson elective','A subject with 4 lessons a week in S6–S7. You choose 2 to 4 of them. History, Geography and Philosophy count when you take them at 4 lessons instead of 2. Two of your options become written EB exams.'],
   comp:['Complementary subject','A 2-lesson extra course such as a lab, ICT or Politics. It counts toward your week but has no EB exam.'],
   adv:['Advanced course','3 extra lessons in L1, L2 or Maths (Maths only with Maths 5). Advanced L1 replaces the normal L1 in the written and oral exams; Advanced L2 replaces L2 in the written exam, and in the oral if you choose L2; Advanced Mathematics becomes your third oral exam.'],
-  nc:['Numerus clausus','A grade cut-off for popular degrees in Germany. Your converted EB grade decides whether you get a place.'],
+  nc:['Numerus clausus','A grade cut-off for popular degrees in Germany. Your converted EB grade is used to rank applicants.'],
   lehramt:['Lehramt','Teacher training degree in Austria, usually in two school subjects.']
 };
 /* ---------- sources (shown by the small document buttons) ---------- */
@@ -2098,16 +2101,16 @@ const sciNames=ids=>ids.map(i=>OPTNAME[i].toLowerCase());
 const joinAnd=a=>a.length<2?a.join(''):a.slice(0,-1).join(', ')+' and '+a[a.length-1];
 function medTip(p,c){
   const n=c.sci4.length; const miss=['bio','chem','phys'].filter(s=>!p.opts.has(s));
-  const t=[n===3?'All three sciences at 4 periods: the best base for the MedAT science part.':n>0?`${n} of 3 sciences at 4 periods. Plan extra study for ${joinAnd(sciNames(miss))}.`:'STS only. The MedAT science part tests biology, chemistry, physics and maths, so plan a lot of self-study.'];
+  const t=[n===3?'All three sciences at 4 lessons: the best base for the MedAT science part.':n>0?`${n} of 3 sciences at 4 lessons. Plan extra study for ${joinAnd(sciNames(miss))}.`:'STS only. The MedAT science part tests biology, chemistry, physics and maths, so plan a lot of self-study.'];
   t.push(p.maths===5?'Maths 5 helps with the MedAT maths questions.':'Maths 3 covers less of the MedAT maths.');
   return t;
 }
-const sciTip=(ids,label)=>(p,c)=>[ids.some(i=>c.sci4.includes(i))?`${label} at 4 periods: good preparation.`:`${label} at 4 periods would be the most useful preparation.`];
+const sciTip=(ids,label)=>(p,c)=>[ids.some(i=>c.sci4.includes(i))?`${label} at 4 lessons: good preparation.`:`${label} at 4 lessons would be the most useful preparation.`];
 const histTip=(p,c)=>[(p.opts.has('hist4')||p.opts.has('phil4'))?'History 4 or Philosophy 4: useful preparation.':'History 4 or Philosophy 4 would be useful preparation.'];
 const DEGREES=[
-  {id:'med',g:'health',ic:'med',name:'Human medicine',ex:'MedUni Innsbruck; also Vienna, Graz and JKU Linz',latin:'during',bio:'medat',de:'C1',adm:{k:'test',s:'MedAT',t:'MedAT-H every year, in German only. Places go by test score; school grades don’t count. 2027: registration 1–31 March, test 9 July (expected).'},note:'At least 75% of places are kept for Austrian school certificates. A MedUni Wien checklist counts the EB among them (see the quota box below).',tip:medTip},
+  {id:'med',g:'health',ic:'med',name:'Human medicine',ex:'MedUni Innsbruck; also Vienna, Graz and JKU Linz',latin:'during',bio:'medat',de:'C1',adm:{k:'test',s:'MedAT',t:'MedAT-H every year, in German only. Places go by test score; school grades don’t count. For 2027 entry: registration 1–31 March, test 9 July (expected). Pupils choosing subjects now take the MedAT in 2029; dates are set each year.'},note:'At least 75% of places are kept for Austrian school certificates. A MedUni Wien checklist counts the EB among them (see the quota box below).',tip:medTip},
   {id:'dent',g:'health',ic:'dent',name:'Dentistry',ex:'MedUni Innsbruck; also Vienna and Graz',latin:'during',bio:'medat',de:'C1',adm:{k:'test',s:'MedAT',t:'MedAT-Z every year, in German only. Like MedAT-H, but with manual-skills tasks instead of text comprehension.'},tip:medTip},
-  {id:'molmed',g:'health',ic:'biomed',name:'Molecular medicine',ex:'Bachelor at MedUni Innsbruck',bio:'medat',de:'C1',adm:{k:'test',s:'Own test and interview',t:'Own knowledge test (about 75% biology, plus chemistry, physics and maths at Matura level), then an interview. About 30 places.'},tip:(p,c)=>[c.sci4.includes('bio')?'Biology at 4 periods: the core of the test.':'Biology at 4 periods would help most: it is three quarters of the test.']},
+  {id:'molmed',g:'health',ic:'biomed',name:'Molecular medicine',ex:'Bachelor at MedUni Innsbruck',bio:'medat',de:'C1',adm:{k:'test',s:'Own test and interview',t:'Own knowledge test (about 75% biology, plus chemistry, physics and maths at Matura level), then an interview. About 30 places.'},tip:(p,c)=>[c.sci4.includes('bio')?'Biology at 4 lessons: the core of the test.':'Biology at 4 lessons would help most: it is three quarters of the test.']},
   {id:'vet',g:'health',ic:'vet',name:'Veterinary medicine',ex:'Vetmeduni Vienna, the only one in Austria',latin:'during',bio:'school',adm:{k:'test',s:'Aptitude test',t:'Written aptitude test, held in German, on science subjects. About 220 places.'},note:'Teaching is in German. The German level for regular applicants isn’t published; ask Vetmeduni.',tip:sciTip(['bio','chem'],'Biology or Chemistry')},
   {id:'pharm',g:'health',ic:'pharm',name:'Pharmacy',ex:'Uni Innsbruck; also Vienna and Graz',latin:'during',bio:'school',de:'B2',adm:{k:'susp',t:'Innsbruck has an entrance procedure but suspended it for 2026/27, so you simply enrol.'},tip:sciTip(['chem'],'Chemistry')},
   {id:'bio',g:'science',ic:'bio',name:'Biology and earth sciences',ex:'Uni Innsbruck',bio:'school',de:'B2',adm:{k:'susp',t:'Biology at Innsbruck has an entrance procedure, suspended for 2026/27. Earth sciences has none.'},tip:sciTip(['bio'],'Biology')},
@@ -2120,7 +2123,7 @@ const DEGREES=[
   {id:'theo',g:'humanities',ic:'theo',name:'Catholic theology',ex:'Diploma programme, Uni Innsbruck',latin:'during',greek:'during',de:'B2'},
   {id:'teach',g:'teaching',ic:'teach',name:'Teacher training (Lehramt)',ex:'Uni Innsbruck with PH Tirol',latin:'during',de:'B2',adm:{k:'test',s:'Entrance test',t:'Every year: an online self-assessment, then a computer-based test of about 2.5 hours at PH Tirol.'},note:'Biology: biology before enrolling (your compulsory school biology covers it). Sport, art, music and technology: extra aptitude exams. Maths, physics or geography alone need no Latin.'},
   {id:'econ',g:'social',ic:'econ',name:'Economics and business',ex:'Uni Innsbruck; WU Vienna and Uni Wien for comparison',de:'B2',adm:{k:'susp',t:'Innsbruck has an entrance procedure but suspended it for 2026/27. WU Vienna: an online self-assessment and an exam on 6 July 2027, held if more than 2,703 apply.'},tip:(p,c)=>[p.maths===5?'Maths 5 is useful for economics and business.':'Maths 5 would help for economics and business.']},
-  {id:'psych',g:'social',ic:'psych',name:'Psychology',ex:'Uni Innsbruck',de:'B2',adm:{k:'test',s:'Entrance test',t:'A 2.5-hour multiple-choice test with texts in German and English, ranked by points. 260 places. School grades don’t count.'}},
+  {id:'psych',g:'social',ic:'psych',name:'Psychology',ex:'Uni Innsbruck',de:'B2',adm:{k:'test',s:'Entrance test',t:'A 2.5-hour multiple-choice test with texts in German and English, ranked by points. 260 places. The test is held when more people register than there are places. School grades don’t count.'}},
   {id:'social',g:'social',ic:'social',name:'Political science, sociology, education',ex:'Uni Innsbruck',de:'B2',adm:{k:'none',t:'No entrance procedure at Innsbruck.'}},
   {id:'sport',g:'other',ic:'sport',name:'Sport science, sport management',ex:'Uni Innsbruck',de:'B2',adm:{k:'test',s:'Sport aptitude exam',t:'A sport aptitude exam before enrolling, held in February and September, with a medical certificate.'}},
   {id:'arts',g:'other',ic:'arts',name:'Art, music and drama',ex:'Mozarteum, Akademie der bildenden Künste, mdw and others',adm:{k:'test',s:'Audition or portfolio',t:'An audition, portfolio or entrance exam decides. School grades are not used.'},note:'German levels vary by programme (for example B1 to B2 at the Akademie der bildenden Künste).'},
@@ -2130,21 +2133,21 @@ const ORDER={ok:0,warn:1,stop:2};
 const EXAM_TXT={ok:'No Latin, Greek or DG exam',warn:'Extra exam during studies',stop:'Extra exam before enrolling'};
 function gerRow(de,p){
   if(!de) return null;
-  if(p.l1==='German') return ['ok',`German: ${de} needed. German is your L1, so the EB covers it.`];
-  if(de==='C1') return ['warn','German: C1 needed. The university accepts a certificate from a German-language school or a C1 language certificate, and doesn’t mention the EB. A C1 certificate such as ÖSD or Goethe, taken in S7, is accepted everywhere.'];
-  return ['ok','German: B2 needed. Your EB has German as L2, taught to C1, and the ministry’s recognition note accepts German on the EB as proof. Confirm with the admissions office.'];
+  if(p.l1==='German') return ['ok',`German: ${de==='B2'?'B2 needed at Uni Innsbruck (Vienna and Graz ask for C1)':'C1 needed'}. German is your L1, so the EB covers it.`];
+  if(de==='C1') return ['warn','German: C1 needed. The university accepts a certificate from a German-language school or a C1 language certificate, and doesn’t mention the EB. A C1 certificate such as ÖSD or Goethe, taken in S7, is widely accepted (each university lists which certificates it takes).'];
+  return ['ok','German: B2 needed at Uni Innsbruck (Vienna and Graz ask for C1). Your EB has German as L2, taught towards C1, and the ministry’s recognition note accepts German on the EB as proof. Confirm with the admissions office.'];
 }
 /* Degree-specific Latin rules and sources (checked 12 Nov 2026 against the UBVO, uibk.ac.at and i-med.ac.at) */
 const LAT={
-  med:['At MedUni Innsbruck the Latin exam must be passed before you complete the 1st diploma exam. With a foreign certificate such as the EB, bring a school confirmation of your Latin hours.',['imedlat','ubvo']],
-  dent:['At MedUni Innsbruck the Latin exam must be passed before you complete the 1st diploma exam. With a foreign certificate such as the EB, bring a school confirmation of your Latin hours.',['imedlat','ubvo']],
-  vet:['The regulation sets the deadline: before you complete the first diploma exam.',['ubvo']],
+  med:['At MedUni Innsbruck the Latin exam must be passed before you complete the first <button class="term" data-t="dipl" aria-expanded="false">diploma exam</button>. With a foreign certificate such as the EB, bring a school confirmation of your Latin hours.',['imedlat','ubvo']],
+  dent:['At MedUni Innsbruck the Latin exam must be passed before you complete the first <button class="term" data-t="dipl" aria-expanded="false">diploma exam</button>. With a foreign certificate such as the EB, bring a school confirmation of your Latin hours.',['imedlat','ubvo']],
+  vet:['The regulation sets the deadline: before you complete the first <button class="term" data-t="dipl" aria-expanded="false">diploma exam</button>.',['ubvo']],
   pharm:['At Innsbruck: after admission, by the bachelor exam, and not as your last exam.',['uibkzp','ubvo']],
-  law:['At Innsbruck: after admission, by the end of the first diploma exam, and not as your last exam. The Innsbruck language centre offers a Latin preparation course and the exam. Other universities set their own deadlines.',['uibkzp','ubvo']],
+  law:['At Innsbruck: after admission, by the end of the first <button class="term" data-t="dipl" aria-expanded="false">diploma exam</button>, and not as your last exam. The Innsbruck language centre offers a Latin preparation course and the exam. Other universities set their own deadlines.',['uibkzp','ubvo']],
   hum:['At Innsbruck: after admission, by the bachelor exam, and not as your last exam.',['uibkzp','ubvo']],
   langs:['At Innsbruck: after admission, by the bachelor exam, and not as your last exam.',['uibkzp','ubvo']],
   classics:['At Innsbruck (Archäologien, Classica et Orientalia): after admission, by the bachelor exam.',['uibkzp','ubvo']],
-  theo:['At Innsbruck: Latin and Greek after admission, by the end of the first diploma exam.',['uibkzp','ubvo']],
+  theo:['At Innsbruck: Latin and Greek after admission, by the end of the first <button class="term" data-t="dipl" aria-expanded="false">diploma exam</button>.',['uibkzp','ubvo']],
   teach:['At Innsbruck, for German, English, French, Italian, Spanish, Russian, History and Catholic Religion: after admission, by the bachelor exam. Teaching Latin: Latin before you enrol, Greek after. Teaching Greek: Greek before, Latin after.',['uibkzp','ubvo']]
 };
 const ADMSRC={med:['medat','medatreg'],dent:['medat','medatreg'],vet:'vet',pharm:'uibkauf',bio:'uibkauf',stem:'uibkauf',eng:'uibkauf',law:'uibkauf',hum:'uibkauf',langs:'uibkauf',teach:'uibkauf',econ:['uibkauf','wuwiso'],psych:'uibkpsy',social:'uibkauf',sport:'uibkauf',fh:['mci','hok']};
@@ -2157,12 +2160,12 @@ function evalDegree(d,p,c){
     else {const s=d.latin==='before'?'stop':'warn'; bump(s); short.push(d.latin==='before'?'Latin before enrolling':'Latin exam'); rows.push([s,(d.latin==='before'?'Latin exam before you can enrol':'Latin exam during your studies')+', unless your school Latin adds up to 10 weekly hours over the years. '+(LAT[d.id]?LAT[d.id][0]:''),(LAT[d.id]||['',['ubvo']])[1]]);}
   }
   if(d.greek){
-    {const s=d.greek==='before'?'stop':'warn'; bump(s); short.push('Greek exam'); rows.push([s,(d.greek==='before'?'Greek exam before you can enrol. ':'Greek exam during your studies. ')+'AES Tirol offers no Greek in S6–S7, so school Greek won’t reach the total of 10 weekly hours that would let you skip it.',['uibkzp','ubvo']]);}
+    {const s=d.greek==='before'?'stop':'warn'; bump(s); short.push('Greek exam'); rows.push([s,(d.greek==='before'?'Greek exam before you can enrol. ':'Greek exam during your studies. ')+'School Greek counts only from Austrian grade 9 onwards and must add up to 10 weekly hours; Greek is not on AES Tirol’s 2027/28 S6–S7 form.',['uibkzp','ubvo']]);}
 
   }
-  if(d.latin&&['med','dent','law','teach'].includes(d.id)) rows.push(['info',d.id==='teach'?'Latin may be dropped for teaching subjects other than Latin: recommended by the rectors’ conference in October 2026, not yet decided.':'Latin may be dropped for this degree: recommended by the rectors’ conference in October 2026, not yet decided.','uniko']);
+  if(d.latin&&['med','dent','law','teach'].includes(d.id)) rows.push(['info',d.id==='teach'?'Latin may be dropped for teaching subjects other than Latin: recommended by the rectors’ conference in October 2026, not yet decided. The report keeps Latin for history and Catholic theology, so it is unclear for those teaching subjects.':d.id==='dent'?'Latin may also change for dentistry: the October 2026 recommendation names medicine; dentistry isn’t mentioned. Not yet decided.':'Latin may be dropped for this degree: recommended by the rectors’ conference in October 2026, not yet decided.','uniko']);
   if(d.dg){bump('warn'); short.push('DG exam'); rows.push(['warn','Descriptive geometry exam during your studies. The EB doesn’t teach it, so AES Tirol pupils take it at university. Innsbruck runs a preparation course.',['uibkzp','ubvo']]);}
-  if(d.bio) rows.push(['ok',d.bio==='medat'?'Biology: no exam. The admission test covers it.':'Biology: no exam. The compulsory biology you had at AES Tirol counts.','ubvo']);
+  if(d.bio) rows.push(['ok',d.bio==='medat'?'Biology: no exam. The admission test covers it.':'Biology: no exam if your school biology after Austrian grade 8 adds up to 4 weekly hours; S4–S5 Biology (2 lessons a week in each year) does.','ubvo']);
   if(!d.latin&&!d.greek&&!d.dg&&!d.bio) rows.push(['ok','No Latin, Greek, descriptive-geometry or biology exam.']);
   const a=d.adm||{k:'none'};
   if(a.k==='test'){rows.push(['adm',a.t,ADMSRC[d.id]]); short.unshift(a.s);}
@@ -2196,7 +2199,7 @@ function renderDegrees(p,c){
   const gn=$('#gerNote');
   if(gn){
     const N=p.german==='L1'
-      ?['ok','You picked German as your L1. German is your L1, so your EB comes from German-language teaching and exams, and German-taught degrees are covered. The levels below matter most for English-section pupils, and the English-taught options further down may still interest you.']
+      ?['ok','You picked German as your L1. German is your L1, so your EB comes from German-language teaching and exams, and German-taught degrees are covered. The levels below matter most for pupils with English L1, and the English-taught options further down may still interest you.']
       :['warn','You picked English as your L1, so German is your L2: taught to C1, and used for History, Geography, Economics and Religion/Ethics. The table shows what each university asks for and which school routes could count.'];
     gn.className='banner '+N[0]; gn.innerHTML=`<span class="st ${N[0]}">${IC[N[0]]}</span><span>${N[1]}</span>`;
   }
@@ -2205,8 +2208,8 @@ function renderDegrees(p,c){
   $('#outlook').innerHTML=ev.map(({d,e})=>`<li><a href="#deg-${d.id}" data-deg="${d.g}"><span class="dot ${e.dot}" aria-hidden="true"></span><span>${d.name}</span><em>${e.short}</em></a></li>`).join('');
   const b=$('#gerBanner');
   const G=p.german==='L1'
-    ?['ok','German is your L1 (German section), so your EB comes from German-language teaching and exams. That covers the German requirement for German-taught degrees.']
-    :['warn','German is your L2 (English section). It is taught to C1, and History, Geography, Economics and Religion/Ethics are taught and examined in German. The ministry’s recognition note says German on the EB certificate proves German. But no university names the EB in its own rules: Uni Innsbruck needs B2; medicine, Uni Wien, TU Wien and Graz need C1. A few accept German as a school subject (see the <a href="#german">German or English</a> page). A C1 certificate (ÖSD or Goethe) taken in S7 is accepted everywhere.'];
+    ?['ok','German is your L1, so your EB comes from German-language teaching and exams. That covers the German requirement for German-taught degrees.']
+    :['warn','German is your L2. It is taught to C1, and History, Geography, Economics and Religion/Ethics are taught and examined in German. The ministry’s recognition note says German on the EB certificate proves German. But no university names the EB in its own rules: Uni Innsbruck needs B2; medicine, Uni Wien, TU Wien and Graz need C1. A few accept German as a school subject (see the <a href="#german">German or English</a> page). A C1 certificate (ÖSD or Goethe) taken in S7 is widely accepted.'];
   b.className='banner '+G[0]; b.innerHTML=`<span class="st ${G[0]}">${IC[G[0]]}</span><span>${G[1]}</span>`;
 }
 
@@ -2224,21 +2227,22 @@ function renderAbroad(p,c){
     {f:'de',name:'Germany',rows:[
       ['ok','Full university entry: the EB counts as a German Abitur.','kmk'],
       ['ok',`German proof: your German ${p.german} exam counts.`,'kmk'],
+      ...(p.l1==='English'?[['info','With English L1 (a non-German section) you must apply through the school by 30 April of your EB year for the certificate that converts your EB grade into a German one.','kmk']]:[]),
       ['info','Grade: the EB mark is converted with the official KMK formula (see <a href="#convert">EB grades by country</a>). Centrally allocated degrees with a <button class="term" data-t="nc">numerus clausus</button>, such as medicine, use this grade.','kmk']
     ]},
     {f:'ch',name:'Switzerland',rows:[
-      hasSci?['ok','ETH Zurich: Maths, a science and a language must be EB exam subjects, averaging at least 70%. Four more subjects (from physics, chemistry, biology, computer science, another language, geography, history, economics) must have been taken in the last 3 years. Your 4-lesson science can be one of them.','eth']:['warn','ETH Zurich wants Maths, a science and a language as EB exam subjects, averaging at least 70%. Without a 4-lesson science, your only science exam would be an STS oral. Whether that counts isn’t stated, so ask ETH Zurich’s admissions office. Otherwise: a reduced entrance exam.','eth'],
-      epfl?['ok','EPFL: Maths 5 and Physics at the top level, each at least 80%, an overall average of at least 80%, and French at B2. Six of its seven listed subject areas must be on your certificate, and first-year places are capped at 3,000.','epfl']:['stop','EPFL wants Maths 5 and Physics at the top level, each at least 80%, an overall average of at least 80%, and French at B2. Six of its seven listed subject areas must be on your certificate, and first-year places are capped at 3,000. Otherwise: entrance exam.','epfl'],
+      hasSci?['ok','ETH Zurich: Maths, a science and a language must be EB exam subjects, averaging at least 70% (7.0 out of 10). Four more subjects (from physics, chemistry, biology, computer science, another language, geography, history, economics) must have been taken in the last 3 years. Your 4-lesson science can be the science exam; a second science can count among the four.','eth']:['warn','ETH Zurich wants Maths, a science and a language as EB exam subjects, averaging at least 70% (7.0 out of 10). Without a 4-lesson science, your only science exam would be an STS oral. Whether that counts isn’t stated, so ask ETH Zurich’s admissions office. Otherwise: a reduced entrance exam.','eth'],
+      epfl?['ok','EPFL: Maths 5 and Physics at the top level, each at least 80% (8.0 out of 10), an overall average of at least 80 out of 100, and French at B2. Six of its seven listed subject areas must be on your certificate, and first-year places are capped at 3,000, and EPFL selects by overall average.','epfl']:['stop','EPFL wants Maths 5 and Physics at the top level, each at least 80% (8.0 out of 10), an overall average of at least 80 out of 100, and French at B2. Six of its seven listed subject areas must be on your certificate, and first-year places are capped at 3,000, and EPFL selects by overall average. Otherwise: entrance exam.','epfl'],
       ['ok','Basel, Bern, Fribourg, Geneva, Lausanne, Lucerne, Neuchâtel, Zurich and USI accept the EB with six general-education areas in the last 3 years: L1, L2, Maths, a science, humanities/social sciences and an elective. St. Gallen adds its own selection procedure.','swissu']
     ]},
     {f:'it',name:'Italy',rows:[['ok','Recognised. An official table converts the mark: EB 50 becomes 60/100, EB 97.40 to 98 becomes 100/100, and above 98 is 100 cum laude.','equiv']]},
     {f:'nl',name:'Netherlands',rows:[
       all3?['ok','You take Biology, Chemistry and Physics, which Groningen’s Dutch-taught medicine asks for, with Maths.','rug']:['warn','Some Dutch universities require the three sciences: Groningen’s Dutch-taught medicine asks for Biology, Chemistry, Physics and Maths.','rug'],
-      ['info','Groningen, Medicine: Biology (4 periods preferred), Chemistry, Physics and Maths 3 or 5. Twente, Technical Medicine: Maths 5, and Physics, Chemistry and Biology at 4 periods.',['rug','utwente']]
+      ['info','Groningen, Medicine: Biology (4 periods preferred), Chemistry, Physics and Maths 3 or 5. Twente, Technical Medicine: Maths 5, and Physics, Chemistry and Biology at 4 lessons.',['rug','utwente']]
     ]},
     {f:'uk',name:'United Kingdom',rows:[
       p.maths===5?['ok','Maths 5: a UK government guide (2013) calls it equivalent to elements of A level and beyond, and suited to mathematics, engineering, physics and some economics courses.','ucas']:['warn','Maths 3: the same guide says it contains elements of AS and A2 level. For mathematics, engineering, physics and some economics courses it points to Maths 5.','ucas'],
-      ['info','Cambridge: usually at least 85% overall, with 9 or more in the subjects closest to the course. Imperial: at least 80% overall, with 8.5 in relevant subjects, and many courses ask for more.',['cam','imp']]
+      ['info','Cambridge: usually at least 85 out of 100 overall, with 9 or more out of 10 in the subjects closest to the course. Imperial: at least 80 out of 100 overall, with 8.5 out of 10 in relevant subjects, and many courses ask for more.',['cam','imp']]
     ]}
   ];
   $('#abroadGrid').innerHTML=cards.map(k=>`<article class="ctry"><div class="ctry-h">${FLAGS[k.f]}<h3>${k.name}</h3></div><ul class="list">${k.rows.map(rowLi).join('')}</ul></article>`).join('');
@@ -2284,7 +2288,7 @@ function render(){
   const usedCats=CAT_ORDER.filter(k=>c.seg.some(s=>s.cat===k&&s.kind!=='comp'));
   $('#wlegend').innerHTML=usedCats.map(k=>`<span><i style="--c:var(--${k})"></i>${CATS[k]} ${c.seg.filter(s=>s.cat===k&&s.kind!=='comp').reduce((a,s)=>a+s.n,0)}</span>`).join('')+(p.comp?`<span><i class="comp"></i>Complementary 2</span>`:'')+`<span><i style="background:transparent;outline:2px dashed var(--ok)"></i>Allowed 31–35</span>`;
   // languages
-  $('#l2hint').textContent=`So your L2 is ${p.l2}. History, Geography, Economics and Religion/Ethics are taught and examined in ${p.l2}.`;
+  $('#l2hint').textContent=`So your L2 is ${p.l2}. History, Geography and Economics are taught and examined in ${p.l2}; Religion/Ethics is taught in ${p.l2}.`;
   const tOrder=[[p.l1,'t1'],[p.l2,'t2'],[c.OTHER,'t3'],[c.MIX,'mx']].filter(([k])=>c.tongue[k]);
   $('#tbar').innerHTML=tOrder.map(([k,cl])=>`<span class="${cl}" style="width:${c.tongue[k]/c.total*100}%" title="${k}: ${c.tongue[k]}">${cl==='mx'||cl==='t3'?'':k+' '}${cl==='mx'?'':c.tongue[k]}</span>`).join('');
   $('#tkey').innerHTML=tOrder.map(([k,cl])=>`<span><i class="${cl}"></i>${k}${cl==='t1'?' (L1)':cl==='t2'?' (L2)':''} ${c.tongue[k]}</span>`).join('');
@@ -2304,7 +2308,7 @@ function render(){
   // latin
   $('#latOut').innerHTML=(c.latin
     ?[['ok','You take Latin in S6–S7, which needs Latin in S4–S5. That adds up to at least 16 weekly hours (4 lessons a week in each year from S4 to S7), more than the 10 in total that let you skip the Latin exam for every degree that asks for it. The 10-hour rule is the same for every degree.','ubvo']]
-    :[['info','No Latin in S6–S7. Degrees that ask for Latin (medicine, law, pharmacy, many humanities) need school Latin adding up to 10 weekly hours over the years, or a Latin exam at university.',['ubvo','imedlat']]]
+    :[['info','No Latin in S6–S7. Latin you took before S6 counts too. Degrees that ask for Latin (medicine, law, pharmacy, many humanities) need school Latin adding up to 10 weekly hours over the years, or a Latin exam at university.',['ubvo','imedlat']]]
   ).map(rowLi).join('');
   // exams
   const four=OPTS.filter(o=>p.opts.has(o.id)).map(o=>o.role==='L2'?`${o.name} (in ${p.l2})`:o.name);
@@ -2358,7 +2362,7 @@ const CV=[
   how:'No conversion. Austria recognises the EB like its own Reifeprüfung, so equivalence tables are “not strictly necessary”. The document only compares the grade names:',
   head:['EB grade','Austrian grade'],tab:[['Excellent','Very good (Sehr gut)'],['Very good','Good (Gut)'],['Good','Satisfactory (Befriedigend)'],['Satisfactory, Sufficient','Sufficient (Genügend)'],['Failed','Not sufficient (Nicht genügend)']]},
  {c:'Belgium',k:'be',pg:'11–13',up:'FR 25.05.2020, NL 08.09.2020',type:'asis',
-  how:'French-speaking Community: EB marks “exactly correspond” to its percentages (0 = 0%, 10 = 100%), and the EB is recognised automatically. Flemish Community: the EB is equivalent to its secondary diploma; no conversion is given.',
+  how:'French-speaking Community: EB marks “exactly correspond” to its percentages (0 = 0%, 10 = 100%), and the EB is recognised automatically; a pass needs 50% in each subject. Flemish Community: the EB is equivalent to its secondary diploma; no conversion is given.',
   res:m=>`${f2(m)}% (French-speaking Community)`},
  {c:'Bulgaria',k:'bg',pg:'14',up:'28.07.2026',type:'table',scale:'2.00–6.00, pass 3.00',
   how:'Official table on the 0–10 scale. Universities can still set their own admission criteria; NACID handles recognition.',
@@ -2370,14 +2374,14 @@ const CV=[
   how:'Official table on the 0–10 scale. Note: the printed table jumps from 14.49 to 15.5, so 14.5–15.49 is not covered.',
   head:['EB (0–10)','Cyprus (out of 20)'],rows:[[8.4,10,'18.5–20'],[7.0,8.3,'15.5–18.49'],[5.7,6.9,'12.5–14.49'],[5,5.6,'9.5–12.49'],[0,4.9,'1–9.49']],pad:.0999,ten:true},
  {c:'Czech Republic',k:'cz',pg:'17',up:'02.05.2023',type:'table',scale:'1–5, 1 is best, 5 is a fail',
-  how:'Official table for S4–S7 marks on the 0–10 scale. The EB is recognised automatically; no extra exam is needed.',
+  how:'Official table comparing school grades by school year (S4–S7 on the 0–10 scale), for moving between school systems. The EB is recognised automatically; no extra exam is needed.',
   head:['EB (0–10)','Czech Republic'],rows:[[8,10,'1'],[7,7.9,'2'],[6,6.9,'3'],[5,5.9,'4'],[0,4.9,'5']],pad:.0999,ten:true},
  {c:'Denmark',k:'dk',pg:'18',up:'03.11.2026',type:'other',src2:'ufsn',
   how:'Converted by the Ministry of Higher Education and Science with a percentile method: your EB average gets the Danish grade at the same position in the Danish results. The tables are updated every year and published by the ministry, not printed in the document.'},
  {c:'Estonia',k:'ee',pg:'19',up:'05.04.2021',type:'uni',
   how:'No national conversion. Each university’s senate sets its own admission rules and mark equivalence; ask the university.'},
  {c:'Finland',k:'fi',pg:'20–21',up:'26.03.2020',type:'table',scale:'Matriculation marks, I (fail) to L',
-  how:'Official recommendation (OPH-1685-2019) on the 0–10 scale. Universities decide admission criteria by faculty.',
+  how:'Official recommendation (OPH-1685-2019) on the 0–10 scale. Matriculation marks are given per subject, so this compares subject marks. Universities decide admission criteria by faculty.',
   head:['EB (0–10)','Finland'],rows:[[9,10,'Laudatur (L)'],[8,8.99,'Eximia cum laude approbatur (E)'],[7,7.99,'Magna cum laude approbatur (M)'],[6,6.99,'Cum laude approbatur (C)'],[5.5,5.99,'Lubenter approbatur (B)'],[5,5.49,'Approbatur (A)'],[0,4.99,'Improbatur (I)']],pad:.0099,ten:true},
  {c:'France',k:'fr',pg:'22–23',up:'21.09.2020',type:'table',scale:'out of 20, pass 10',
   how:'Official table for the S7 final mark (from the 2021 session). It gives a range out of 20, not a single number. The document prints the E row as “.00–5.99”, meaning 5.00–5.99.',
@@ -2389,7 +2393,7 @@ const CV=[
   how:'Ministry formula: Greek mark = ((EB mark − pass mark) × 10) ÷ (number of steps on the scale) + 10, using the EB pass mark 50 and top mark 100. The document also gives a table on the 0–10 scale (7–7.99 → 14–15.98, and so on).',
   res:m=>f2((m-50)*10/50+10)+' out of 20'},
  {c:'Hungary',k:'hu',pg:'28',up:'04.02.2021',type:'asis',
-  how:'No conversion needed: the EB is equivalent to the Hungarian Baccalaureate. For admission, the points for an EB subject equal its EB result in %.'},
+  how:'No conversion needed: the EB is equivalent to the Hungarian Baccalaureate. For admission, an EB subject other than the language exam counts as an advanced-level exam only after passing a special exam (felsőoktatási felvételi szakmai vizsga); its admission points then equal that subject’s EB result in %.'},
  {c:'Ireland',k:'ie',pg:'29',up:'07.09.2026',type:'other',src2:'cao',
   how:'Irish universities publish indicative EB-to-Leaving-Certificate points each year (CAO guidelines, not printed in the document). EB holders get 25 extra points for a mark of 6 or more in Maths 5 or Advanced Mathematics, if Maths is among their best six subjects.'},
  {c:'Italy',k:'it',pg:'30–31',up:'05.03.2021',type:'table',scale:'60–100, plus 100 cum laude',
@@ -2397,14 +2401,14 @@ const CV=[
   head:['EB final mark','Italy (Esame di Stato)'],
   rows:[[50,50.59,'60'],[50.6,51.79,'61'],[51.8,52.99,'62'],[53,54.19,'63'],[54.2,55.39,'64'],[55.4,56.59,'65'],[55.6,57.79,'66'],[57.8,58.99,'67'],[59,60.19,'68'],[60.2,61.39,'69'],[61.4,62.59,'70'],[62.6,63.79,'71'],[63.8,64.99,'72'],[65,66.19,'73'],[66.2,67.39,'74'],[67.4,68.59,'75'],[68.6,69.79,'76'],[69.8,70.99,'77'],[71,72.19,'78'],[72.2,73.39,'79'],[73.4,74.59,'80'],[74.6,75.79,'81'],[75.8,76.99,'82'],[77,78.19,'83'],[78.2,79.39,'84'],[79.4,80.59,'85'],[80.6,81.79,'86'],[81.8,82.99,'87'],[83,84.19,'88'],[84.2,85.39,'89'],[85.4,86.59,'90'],[86.6,87.79,'91'],[87.8,88.99,'92'],[89,90.19,'93'],[90.2,91.39,'94'],[91.4,92.59,'95'],[92.6,93.79,'96'],[93.8,94.99,'97'],[95,96.19,'98'],[96.2,97.39,'99'],[97.4,98,'100'],[98.01,100,'100 cum laude']],pad:.0099,unit:'/100'},
  {c:'Latvia',k:'lv',pg:'32–33',up:'03.03.2021',type:'table',scale:'0–100%',
-  how:'Official table in 0.1 steps on the 0–10 scale. Between two steps, the table gives no rule, so both neighbours are shown.',
+  how:'Official table in 0.1 steps on the 0–10 scale. The result is a Latvian exam percentage, not the EB mark × 10 (EB 7.0 gives 50%). Between two steps, the table gives no rule, so both neighbours are shown.',
   head:['EB (0–10)','Latvia (%)'],steps:[[10,100],[9.9,99],[9.8,98],[9.7,97],[9.6,96],[9.5,95],[9.4,94],[9.3,93],[9.2,92],[9.1,91],[9,90],[8.9,88],[8.8,86],[8.7,84],[8.6,82],[8.5,80],[8.4,78],[8.3,76],[8.2,74],[8.1,72],[8,70],[7.9,68],[7.8,66],[7.7,64],[7.6,62],[7.5,60],[7.4,58],[7.3,56],[7.2,54],[7.1,52],[7,50],[6.9,48],[6.8,46],[6.7,44],[6.6,42],[6.5,40],[6.4,38],[6.3,36],[6.2,34],[6.1,32],[6,30],[5.9,29],[5.8,28],[5.7,27],[5.6,26],[5.5,25],[5.4,24],[5.3,23],[5.2,22],[5.1,21],[5,20]]},
  {c:'Lithuania',k:'lt',pg:'34–35',up:'16.09.2020',type:'subject',
   how:'Official tables for individual subject marks, not the final mark. The state-exam scale (100 points, pass 16) depends on the course type; the school “annual mark” is on a 10-point scale (pass 4). Used by the Centre for Quality Assessment in Higher Education for state-funded places.',
   head:['EB subject mark','4-period, Advanced, L2','2- or 3-period (not L2)'],tab:[['9.5–10','100','100'],['9–9.49','100','91'],['8.5–8.99','91','82'],['8–8.49','81','73'],['7.5–7.99','72','65'],['7–7.49','63','56'],['6.5–6.99','53','48'],['6–6.49','44','41'],['5.5–5.99','35','31'],['5–5.49','25','23']],cap:'State exam, 100-point scale (new columns; the document also lists the old scale)',
   head2:['EB subject mark','Annual mark (10-point)'],tab2:[['9.5–10','10'],['8.5–9.49','9'],['7.5–8.49','8'],['6.5–7.49','7'],['5.5–6.49','6'],['5.0–5.49','5']],cap2:'School annual mark'},
  {c:'Luxembourg',k:'lu',pg:'36',up:'29.08.2024',type:'none',
-  how:'Luxembourg “does not convert the marks” of EB holders. Equivalence is granted by ministerial decree, as for all foreign certificates.'},
+  how:'In general, Luxembourg “does not convert the marks” of EB holders. Equivalence is granted by ministerial decree, as for all foreign certificates.'},
  {c:'Malta',k:'mt',pg:'37–40',up:'28.07.2025',type:'subject',src2:'um',
   how:'University of Malta: EB subject grades are “broadly comparable” to Matriculation Certificate grades, per subject. For numerus clausus courses, local Matriculation holders get precedence.',
   head:['EB subject grade','Malta (Matriculation)'],tab:[['9.0–10','Grade A'],['8.0–8.9','Grade B'],['7.0–7.9','Grade C'],['6.0–6.9','Grade D'],['5.0–5.9','Grade E']]},
@@ -2419,7 +2423,7 @@ const CV=[
   how:'Official rule: from 60.10, divide by 10 and keep the first two decimals without rounding (75.79 → 7.57). From 50 to 60.09, the grade is 6. Universities may add their own conditions.',
   res:m=>m>=60.1?(Math.floor(m*10+1e-6)/100).toFixed(2):'6'},
  {c:'Slovakia',k:'sk',pg:'46',up:'11.11.2020',type:'table',scale:'1–5, 1 is best, 5 is a fail',
-  how:'Official table on the 0–10 scale. Universities set their own admission criteria.',
+  how:'Official table on the 0–10 scale, headed “Slovak school”; the document doesn’t say it is used for university admission. Universities set their own admission criteria.',
   head:['EB (0–10)','Slovakia'],rows:[[8,10,'1 (výborný)'],[7,7.9,'2 (chválitebný)'],[6,6.9,'3 (dobrý)'],[5,5.9,'4 (dostatočný)'],[0,4.9,'5 (nedostatočný)']],pad:.0999,ten:true},
  {c:'Slovenia',k:'si',pg:'47–48',up:'21.08.2019',type:'overall',
   how:'Official tables for the overall result of five subjects (L1, L2, Maths and the two best electives) and for advanced level. A mark of 4.00–4.99 can count as a pass (2) under conditions in the document.',
@@ -2434,15 +2438,15 @@ const CV=[
 const ANU=[[70,57.5],[80,71.5],[82,71.5],[85,77],[90,83.5],[92,85],[94,87.5],[95,90],[97,95],[98,95],[99,97.5]];
 CV.push(
  {c:'Australia',k:'au',world:true,type:'unitab',src3:['anu','unsw','melb'],
-  how:'No national conversion: the admission centres (UAC, VTAC and others) don’t publish one. Universities do. ANU publishes the minimum EB score for each required entrance rank (ATAR); UNSW’s 2027 entry table gives the same EB figures at the ranks both list. The University of Melbourne publishes minimum EB results per course, for example Science 76, Biomedicine 81, Commerce 83.5, EB Maths 5 meets the maths prerequisite; Maths 3 can with an extra online calculus module.',
-  head:['ANU entrance rank (ATAR)','Minimum EB score'],tab:ANU.map(r=>[String(r[0]),String(r[1])]),
+  how:'ATAR is a rank from 0 to 99.95 (higher is better); the EB figures here are final marks out of 100. No national conversion: the admission centres (UAC, VTAC and others) don’t publish one. Universities do. ANU publishes the minimum EB score for each required entrance rank (ATAR); UNSW’s 2027 entry table gives the same EB figures at the ranks both list. The University of Melbourne publishes minimum EB final marks (out of 100; it calls them “weighted GPA”) per course, for example Science 76, Biomedicine 81, Commerce 83.5, EB Maths 5 meets the maths prerequisite; Maths 3 can with an extra online calculus module.',
+  head:['ANU entrance rank (ATAR)','Indicative minimum EB final mark (/100)'],tab:ANU.map(r=>[String(r[0]),String(r[1])]),
   res:m=>{const ok=ANU.filter(r=>m>=r[1]); return ok.length?'Enough for ANU programmes up to rank '+ok[ok.length-1][0]:'Below ANU’s lowest listed EB score (57.5)';}},
  {c:'Canada',k:'ca',world:true,type:'uni',src3:['mcgill','uoft'],
   how:'No national or provincial conversion found; each university assesses the EB itself. McGill gives up to 30 transfer credits for an EB with passing grades (for example Arts and Science 30, Engineering 15 to 18) and course exemptions for Maths 5, Advanced Maths and the 4-period sciences. The University of Toronto asks for the completed EB Diploma, with prerequisite courses in the final year.'},
  {c:'United States',k:'us',world:true,type:'uni',src3:['doe','umich'],
   how:'No official conversion. The US Department of Education does not evaluate foreign qualifications; each college decides, sometimes with a private credential evaluation. Example: the University of Michigan asks for certified EB exam results per subject, and advanced standing (credit) “may be available depending on the results”.'},
  {c:'China (mainland)',k:'cn',world:true,type:'uni',src3:['tsinghua'],
-  how:'No official conversion of foreign grades found. Universities set their own rules for international applicants: a school-leaving diploma plus language proof (for example HSK 5 for Tsinghua’s Chinese-English programmes, or TOEFL/IELTS for English-taught ones) and accepted tests such as the CSCA, SAT or A-Levels. The EB is not named.'},
+  how:'No official conversion of foreign grades found; only Tsinghua was checked in detail. Universities set their own rules for international applicants: a school-leaving diploma plus language proof (for example HSK 5 for Tsinghua’s Chinese-English programmes, or TOEFL/IELTS for English-taught ones) and accepted tests such as the CSCA, SAT or A-Levels. The EB is not named.'},
  {c:'Hong Kong (China)',k:'hk',world:true,type:'unitab',src3:['hku','cuhk'],
   how:'Universities name the EB directly: HKU sets a lower boundary of 85% overall (listed under Germany on its site), CUHK a minimum of 80% overall. HKU also asks for English proof (IELTS 6.5, with at least 6.0 in writing and speaking); both set programme subject requirements.',
   head:['University','Minimum EB final mark'],tab:[['HKU','85'],['CUHK','80']],
@@ -2459,7 +2463,7 @@ const REFROWS={
 };
 const REFCAP={de:'Worked examples, calculated by us with the official KMK rule',gr:'Worked examples, calculated by us with the official formula (pass 50, top 100, as the document states)',ro:'Worked examples, calculated by us with the official rule',pt:'Our calculation: the document gives no values for the two marks, so we assume pass 50 and top 100',es:'Our illustration: the source only says EB marks out of 10 correspond fully, so this divides the final mark by 10',be:'Our illustration: the source only says EB marks of 0–10 equal 0–100%'};
 const REFHEAD={be:'Belgium (French-speaking), %',de:'German grade',gr:'Greece (out of 20)',pt:'Portugal (out of 20)',ro:'Romania (1–10)',es:'Spain (0–10)'};
-CV.forEach(d=>{ if(!d.scale){ d.scale={be:'0–100%',hu:'EB % used as is',au:'ATAR rank',hk:'Minimum EB %',lt:'100-point exam, 10-point school mark',mt:'Grades A–E',ie:'CAO points',dk:'Danish grades',se:'Swedish merit rating',at:'1–5'}[d.k]||''; } });
+CV.forEach(d=>{ if(!d.scale){ d.scale={be:'0–100%',hu:'Admission points',au:'ATAR rank',hk:'Minimum EB %',lt:'100-point exam, 10-point school mark',mt:'Grades A–E',ie:'CAO points',dk:'Danish grades',se:'Swedish merit rating',at:'1–5'}[d.k]||''; } });
 const CVTYPE={overall:'Five-subject result',unitab:'University tables',table:'Official table',formula:'Official formula',asis:'Used as it is',none:'No conversion',uni:'Each university decides',subject:'Per subject only',other:'Separate national table'};
 function cvOne(head,body,cap){ return `<div class="tscroll cvt"><table>${cap?`<caption>${cap}</caption>`:''}<thead><tr>${head.map(h=>`<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${body.map(r=>`<tr>${r.map((v,i)=>i?`<td>${v}</td>`:`<th scope="row">${v}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`; }
 function cvTable(d){
@@ -2476,7 +2480,7 @@ function renderConvert(){
   const open=new Set($$('#cvList details[open]').map(x=>x.dataset.k));
   el.innerHTML=CV.map((d,i)=>{const hd=(d.world&&(i===0||!CV[i-1].world))?'<h3 class="cvgrp">Beyond the EU</h3>':(!d.world&&i===0?'<h3 class="cvgrp">EU countries (official EB equivalence document)</h3>':''); return hd+`<details class="cv" data-k="${d.k}"${open.has(d.k)?' open':''}>
     <summary><span class="cv-c">${d.c}</span><span class="cv-t ${d.type}">${CVTYPE[d.type]}</span><span class="cv-r">${d.scale||''}</span><span class="chev" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M5.5 8l4.5 4.5L14.5 8"/></svg></span></summary>
-    <div class="cv-b"><p>${d.how}${srcBtn(d.world?d.src3:['eq-'+d.k].concat(d.src2?[d.src2]:[]))}</p>${cvTable(d)}${d.up?`<p class="small muted">Country section updated ${d.up}.</p>`:'<p class="small muted">Checked on the official pages in November 2026. Rules for 2028 entry may change.</p>'}</div></details>`;}).join('');
+    <div class="cv-b"><p>${d.how}${srcBtn(d.world?d.src3:['eq-'+d.k].concat(d.src2?[d.src2]:[]))}</p>${cvTable(d)}${d.up?`<p class="small muted">Country section updated ${d.up}; rules may change before 2029.</p>`:'<p class="small muted">Checked on the official pages in November 2026. Rules for 2029 entry may change.</p>'}</div></details>`;}).join('');
 }
 
 CV.forEach(d=>{SRC['eq-'+d.k]=['Equivalence of the EB (2014-03-D-25), '+d.c+', p. '+d.pg,EQURL,'The official European Schools document, country section for '+d.c+' (updated '+d.up+').'];});
